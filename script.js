@@ -37,24 +37,29 @@ document.addEventListener('DOMContentLoaded', function () {
     function displayWeather(data) {
         const currentWeather = data.list[0];
         const forecastData = data.list.slice(1, 6); // Next 5 days
-
+    
         // Display current weather
         todayContainer.innerHTML = `
             <h2>${data.city.name}</h2>
             <p>Date: ${new Date(currentWeather.dt * 1000).toLocaleDateString()}</p>
-            <p>Temperature: ${currentWeather.main.temp} K</p>
+            <p>Temperature: ${convertToCelsius(currentWeather.main.temp)}°C</p>
             <p>Humidity: ${currentWeather.main.humidity}%</p>
             <p>Wind Speed: ${currentWeather.wind.speed} m/s</p>
         `;
-
+    
         // Display forecast
         forecastContainer.innerHTML = forecastData.map(day => `
             <div class="col-md-2">
                 <p>Date: ${new Date(day.dt * 1000).toLocaleDateString()}</p>
-                <p>Temperature: ${day.main.temp} K</p>
+                <p>Temperature: ${convertToCelsius(day.main.temp)}°C</p>
                 <p>Humidity: ${day.main.humidity}%</p>
             </div>
         `).join('');
+    }
+    
+    // Function to convert Kelvin to Celsius
+    function convertToCelsius(kelvin) {
+        return (kelvin - 273.15).toFixed(2);
     }
 
     function saveToLocalStorage(cityName) {
