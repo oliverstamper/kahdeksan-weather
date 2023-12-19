@@ -76,7 +76,7 @@ form {
 #forecast .col-md-2 {
     flex: 0 0 48%; 
     border: 1px solid #000000;
-    padding: 10px;
+    padding: 20px;
     margin: 5px;
     color:#fff;
     background-color: rgb(54, 60, 76);
@@ -88,7 +88,7 @@ form {
 #today {
     text-align: left;
     border: 1px solid #000000; /* Add border styling */
-    padding: 15px; /* Add padding for better appearance */
+    padding: 20px; /* Add padding for better appearance */
     background-color: #fff; /* Add a background color */
     margin-bottom: 20px; /* Add some spacing at the bottom */
 }

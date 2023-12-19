@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function () {
         `;
     
         
-        forecastContainer.innerHTML = forecastData.map(day => `
-            <div class="col-md-2">
+        forecastContainer.innerHTML = forecastData.map(day => ` 
+         <div class="col-md-2">
                 <p>Date: ${new Date(day.dt * 1000).toLocaleDateString()}</p>
                 <p>Temp: ${convertToCelsius(day.main.temp)}°C</p>
                 <p>Humidity: ${day.main.humidity}%</p>
@@ -93,6 +93,6 @@ document.addEventListener('DOMContentLoaded', function () {
         historyContainer.appendChild(historyItem);
     }
 
-    // Load search history when the page is loaded
+    
     loadSearchHistory();
 });
