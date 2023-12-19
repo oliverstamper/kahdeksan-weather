@@ -23,7 +23,7 @@ Open the webpage in Google Chrome at the following URL. It will display the weat
 ![image](https://github.com/oliverstamper/kahdeksan-weather/blob/1c7386d0cbdff0c0e45f31867f7964ed9e8e03a6/Screenshot%202023-12-19%20133844.png)
 
 Type in the destination you desire the weather of.
-![image]
+![image](https://github.com/oliverstamper/kahdeksan-weather/blob/48ecd232f0a1365229f07dd231bed5e1e674ad34/Screenshot%202023-12-19%20133920.png)
 
 
 This destination is saved, click on past searched destinations to see the weather easily from each place.
